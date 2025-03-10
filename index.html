@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="connect-src 'self' http://127.0.0.1:5000/repos/preferences;">
+    <title>Test Flask API</title>
+</head>
+<body>
+    <h1>Testing Flask API</h1>
+    <script>
+        fetch('http://127.0.0.1:5000/repos')
+  .then(response => response.json())
+  .then(data => console.log(data))  // Logs GitHub repos
+  .catch(error => console.error('Error:', error));
+
+    </script>
+</body>
+</html>
